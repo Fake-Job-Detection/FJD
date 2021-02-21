@@ -1,12 +1,13 @@
 import panda as pd
 
-def removePunctuation:
-try:
-    
+def removePunctuation(data):
+    try:
+        print("Remove punctuation")
+        
 
-catch Exception as e:
-println("Reomving unnecesaary Punctuations")
+    catch Exception as e:
+    print("Reomving unnecesaary Punctuations")
 
 def removeComma():
 
-def removeDot();
+def removeDot():
