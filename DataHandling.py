@@ -2,8 +2,8 @@ import panda as pd
 
 df.drop('has_questions',axis=1)
 
-//Removing punctuation, 
-def removeuncessary(text):
+//Removing  
+def removeSymbol(text):
     try:
         text = re.sub('[%s]'%re.escape(string.punctuation), '', str(text))
         text = re.sub('\w*\d\w*', '', str(text))
