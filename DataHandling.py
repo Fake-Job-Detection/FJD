@@ -2,14 +2,14 @@ import panda as pd
 
 df.drop('has_questions',axis=1)
 
-def removePunctuation(data):
+//Removing punctuation, 
+def removeuncessary(text):
     try:
-        print("Remove punctuation")
-        
+        text = re.sub('[%s]'%re.escape(string.punctuation), '', str(text))
+        text = re.sub('\w*\d\w*', '', str(text))
+        text = re.sub('[^a-zA-Z ]+', ' ', str(text))
 
-    catch Exception as e:
-    print("Reomving unnecesaary Punctuations")
+        return text
+    except Exception as e:
+        handle('removing unnecessary text')
 
-def removeComma():
-
-def removeDot():
