@@ -11,5 +11,5 @@ def removeSymbol(text):
 
         return text
     except Exception as e:
-        handle('removing unnecessary text')
+        handle('removing unnecessary text, change')
 
