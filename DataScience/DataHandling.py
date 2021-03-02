@@ -61,4 +61,123 @@ def missing_values(data):
     except Exception as e:
         handle('missing data handling process')
 
+def texthandling(data):
+        print('Text Handling')
+        try:
+        
+            stop_words = set(stopwords.words('english'))
+            for i in range(0, data.shape[0]):
+
+                data.loc[i, 'company_profile'] = removeuncessary(data.loc[i,
+                                                            'company_profile'])
+                data.loc[i, 'description'] = removeuncessary(data.loc[i,
+                                                                'description'])
+                data.loc[i, 'requirements'] = removeuncessary(data.loc[i,
+                                                               'requirements'])
+                data.loc[i, 'benefits'] = removeuncessary(data.loc[i,
+                                                                   'benefits'])
+                data.loc[i, 'title'] = removeuncessary(data.loc[i, 'title'])
+                data.loc[i, 'department'] = removeuncessary(data.loc[i,
+                                                                 'department'])
+                data.loc[i, 'industry'] = removeuncessary(data.loc[i,
+                                                                   'industry'])
+                data.loc[i, 'function'] = removeuncessary(data.loc[i,
+                                                                   'function'])
+
+                words = str(data.loc[i, 'company_profile'])
+                if(words == 'no info'):
+                    data.loc[i, 'company_profile_word_count'] = 0
+                else:
+                    data.loc[i, 'company_profile_word_count'] = len(
+                                                                 words.split())
+
+                words = str(data.loc[i, 'benefits'])
+                if(words == 'no info'):
+                    data.loc[i, 'benefits_word_count'] = 0
+                else:
+                    data.loc[i, 'benefits_word_count'] = len(words.split())
+
+                data.loc[i, 'title_and_job_similarity'] = synonym_relation(
+                                data.loc[i, 'title'], data.loc[i,
+                                                                'description'])
+
+                data.loc[i, 'title_and_req_similarity'] = synonym_relation(
+                                data.loc[i, 'title'], data.loc[i,
+                                                               'requirements'])
+
+                data.loc[i, 'profile_and_job_similarity'] = synonym_relation(
+                       data.loc[i, 'company_profile'], data.loc[i,
+                                                                'description'])
+
+                data.loc[i, 'profiel_and_req_similarity'] = synonym_relation(
+                      data.loc[i, 'company_profile'], data.loc[i,
+                                                               'requirements'])
+
+                data.loc[i,
+                'title_and_department_syn_similarity'] = synonym_relation(
+                               data.loc[i, 'title'], data.loc[i, 'department'])
+
+                data.loc[i,
+                'title_and_industry_syn_similarity'] = synonym_relation(
+                                  data.loc[i, 'title'],data.loc[i, 'industry'])
+
+                data.loc[i,
+                'title_and_function_syn_similarity'] = synonym_relation(
+                                 data.loc[i, 'title'], data.loc[i, 'function'])
+
+                data.loc[i,
+                'industry_and_department_syn_similarity'] = synonym_relation(
+                            data.loc[i, 'industry'], data.loc[i, 'department'])
+
+                data.loc[i,
+                'function_and_department_syn_similarity'] = synonym_relation(
+                            data.loc[i, 'function'], data.loc[i, 'department'])
+                data.loc[i,
+                'industry_and_function_syn_similarity'] =synonym_relation(
+                              data.loc[i, 'industry'], data.loc[i, 'function'])
+
+            for i in ['title_and_job_similarity', 'title_and_req_similarity',
+                    'profile_and_job_similarity', 'profiel_and_req_similarity',
+                    'title_and_department_syn_similarity',
+                    'title_and_industry_syn_similarity',
+                    'title_and_function_syn_similarity',
+                    'function_and_department_syn_similarity',
+                    'industry_and_department_syn_similarity',
+                    'industry_and_function_syn_similarity']:
+
+                    data[i].fillna(0, inplace = True)
+
+            data.drop(['company_profile', 'benefits', 'description',
+                       'requirements', 'title', 'department', 'industry',
+                       'function', 'job_id'], axis = 1, inplace = True)
+            return data
+        except Exception as e:
+            handle('Text handling process')
+
+def stopwordsremove(text):
+    try:
+        word_token = word_tokenize(text)
+        ps = PorterStemmer()
+        filtered = [ps.stem(w.lower())
+                    for w in word_token if not w in stop_words]
+        return filtered
+    except Exception as e:
+        handle('stop words removing')
+
+
+def removeuncessary(text):
+    try:
+        '''
+        1. removing punctuations,
+        2. removing numbered words,
+        3. removing unknown characters
+        '''
+        text = re.sub('[%s]'%re.escape(string.punctuation), '', str(text))
+        text = re.sub('\w*\d\w*', '', str(text))
+        text = re.sub('[^a-zA-Z ]+', ' ', str(text))
+
+        return text
+    except Exception as e:
+        handle('removing unnecessary text')
+
 
