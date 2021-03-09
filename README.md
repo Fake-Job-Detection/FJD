@@ -1,2 +1,0 @@
-# FJD
-SDGP project
