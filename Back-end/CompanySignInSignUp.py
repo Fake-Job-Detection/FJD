@@ -5,15 +5,12 @@ from flask import Flask, flash, redirect, render_template, request, session, abo
 app = Flask(__name__)
 
 config = {
-    'apiKey': "AIzaSyBWDwC9xDwiC5wk4S9V5PNw2xK11eeh6kE",
-    'authDomain': "test2-775e6.firebaseapp.com",
-    'databaseURL': "https://test2-775e6-default-rtdb.firebaseio.com",
-    'projectId': "test2-775e6",
-    'storageBucket': "test2-775e6.appspot.com",
-    'messagingSenderId': "110451803782",
-    'appId': "1:110451803782:web:cb220789c4fbb8db31b307",
-    'measurementId': "G-60DKEFHNKD"
-
+    "apiKey": "AIzaSyCviAjC1G0OSRpxuVK6LTvkpPYUHJTfHa0",
+    "authDomain": "fjd-backend.firebaseapp.com",
+    "databaseURL": "https://fjd-backend-default-rtdb.firebaseio.com",
+    "projectId": "fjd-backend",
+    "storageBucket": "fjd-backend.appspot.com",
+    "messagingSenderId": "176438699742"
 }
 
 #initialize firebase
