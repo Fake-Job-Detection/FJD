@@ -10,32 +10,38 @@ function Jobads() {
     <div>
       <br></br>
       <div className="Jobads">
-      <div className="postings">
         {Data.map(post=>{
           return(
             <>
-            <Link to="/Jobposting" >
-            <h4>{post.title}</h4>
-            </Link>
+            <div className="logo">
+            <img src={post.logo} height="100" width="100"/>
+            </div>
             
-            <p>{post.company}</p>
+      <div className="postings">
+           <Link to="/Jobposting" >
+             <h4>{post.title}</h4>
+            </Link>
+
+            <p><h4>{post.company}</h4></p>
            
-            <p>{post.department}</p>
+            <p><h4>{post.department}</h4></p>
             
             <p>{post.employment}</p>
-        
-            <div className="right">
+            
+           
             <p>{post.education}</p>
            
            <p>{post.experience}</p>
-            </div>
+           
+           </div> 
             <br></br>
             </>
+            
           )
         })}
         </div>
       </div>
-      </div> 
+      
       
       
      

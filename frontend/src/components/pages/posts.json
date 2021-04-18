@@ -1,12 +1,13 @@
 [
     {
       "id":1,
-      "title":"Account Executive - Washington DC",
+      "title":" Account Executive - Washington DC",
       "company":"ESRI Environmental Systems Research Institute",
       "department":"Sales",
       "employment":"Full time",
       "education":"Bachelor's Degree",
-      "experience":"Mid-Senior level"
+      "experience":"Mid-Senior level",
+      "logo":"images/1.png"
     },
 
     {
@@ -16,7 +17,8 @@
         "department":"",
         "employment":"",
         "education":"Bachelor's Degree",
-      "experience":"Mid-Senior level"
+      "experience":"Mid-Senior level",
+      "logo":"images/2.jpg"
       },
 
       {
@@ -26,7 +28,8 @@
         "department":"Sales",
         "employment":"Full time",
         "education":"Associate",
-      "experience":"Mid-Senior level"
+      "experience":"Mid-Senior level",
+      "logo":"images/3.png"
       },
 
       {
@@ -36,7 +39,8 @@
         "department":"Sales",
         "employment":"Full time",
         "education":"Associate",
-      "experience":"Entry level"
+      "experience":"Entry level",
+      "logo":"images/4.png"
       }
   
 ]

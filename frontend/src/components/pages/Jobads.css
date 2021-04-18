@@ -1,16 +1,17 @@
-.Jobads{
-    position: absolute;
-    text-align: justify;
+.postings{
     width: 900px;
-    height: 120px;
-    background-color: rgb(183, 201, 209);
-  
+    height: 150px;
+    background-color: rgb(190, 199, 199);
 }
 
-.right{
-    text-align: right;
-    color:darkslategray;
+
+
+.logo{
+    float: right;
+    width: 40%;
 }
+
+
 
 body  {
     background-image: url("images.jpg");
