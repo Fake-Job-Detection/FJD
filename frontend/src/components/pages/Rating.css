@@ -6,7 +6,7 @@
 }
 
 .rating{
-    top: 200px;
+    top: 450px;
     right: 250px;  
     position: absolute;
     display: flex;
@@ -14,7 +14,7 @@
     margin-top: 5px;
     border: 1px solid #000;
     box-sizing: border-box;
-    background: linear-gradient(to right, #f00, #ff0, #0f0);
+    background: linear-gradient(to right, #f00, #0f0);
 }
 
 .rating input{

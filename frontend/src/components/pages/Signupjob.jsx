@@ -3,12 +3,12 @@ import Job from "../../job.png";
 import './Signup.scss';
 import { Link } from 'react-router-dom';
 
-export default function SignUp() {
+export default function Signupjob() {
   return (
     <div className="base-container" >
-      <div className="header">Sign in</div>
-      <Link to="/Signupjob" >
-          Don't have an account? Sign Up here
+      <div className="header">Sign Up</div>
+      <Link to="/Signup">
+          Already have an Account? Sign In here
      </Link>
       <div className="content">
       <div className="image">
@@ -27,15 +27,15 @@ export default function SignUp() {
         
       </div>
 
-      <Link to="/Forgotpassword" >
-          Forgot password?
-     </Link>
+      
       <div className="footer">
-      <Link to="/Homejobseeker" className="btn btn-primary">
-          Sign In
+      <Link to="/Signup" className="btn btn-primary">
+          Sign Up
      </Link>
 
-    
+     
+
+
 
    
 

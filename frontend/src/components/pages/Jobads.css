@@ -1,0 +1,18 @@
+.Jobads{
+    position: absolute;
+    text-align: justify;
+    width: 900px;
+    height: 120px;
+    background-color: rgb(183, 201, 209);
+  
+}
+
+.right{
+    text-align: right;
+    color:darkslategray;
+}
+
+body  {
+    background-image: url("images.jpg");
+ 
+  }

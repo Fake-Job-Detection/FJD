@@ -12,7 +12,7 @@ function Categories() {
             <CardItem
               src='images/Accounting.jpg'
               text='Accounting/ Finance'
-              path='/Jobposting'
+              path='/Jobads'
             />
             
           

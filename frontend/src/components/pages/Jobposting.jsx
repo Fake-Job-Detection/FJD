@@ -1,19 +1,37 @@
-import React from 'react';
+import React,{Component} from 'react';
 import '../../App.css';
 import Jobpost from "../../jobpost.jpg";
 import Footer from '../Footer';
 import { Link } from 'react-router-dom';
 import './Jobposting.css';
 import './Rating.css';
-
+import Data from "./data.json";
 
 function Jobposting() {
   return (
-    
-    <>
+    <body>
     <div>
-      <h3>Job Ad</h3>
-      <img src={Jobpost} />
+      <br></br>
+      <div className="Jobposting">
+      <div className="posts">
+        {Data.map(post=>{
+          return(
+            <>
+            <h4>{post.title}</h4>
+            <p>{post.company}</p>
+            <br></br>
+            <p>{post.description}</p>
+            <br></br>
+            <p>{post.requirements}</p>
+            <br></br>
+            <p>{post.department}</p>
+            <br></br>
+            <p>{post.employment}</p>
+            </>
+          )
+        })}
+        </div>
+      </div>
       </div> 
       
       <div class="b">
@@ -22,7 +40,7 @@ function Jobposting() {
       </Link>
       </div>
       <div class="box">
-    <div class="rating">
+      <div class="rating">
         <input type="radio" name="rating" id="rate10"/><label for="rate10"> 10</label>
         <input type="radio" name="rating" id="rate9"/><label for="rate9"> 9</label>
         <input type="radio" name="rating" id="rate8"/><label for="rate8"> 8</label>
@@ -36,19 +54,20 @@ function Jobposting() {
 
     </div>
       <br></br>
+      
+     
+      </div>
 
-  
-      
-      
+     
+       
       <div class="alert">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-        Alert! This job posting may be fake.
+  
+      <strong>Alert!</strong> This job posting may be fake.
       </div>
-      </div>
-      
-      <Footer />
-    </>
+     
+    </body>
   );
+
 }
 
 export default Jobposting;

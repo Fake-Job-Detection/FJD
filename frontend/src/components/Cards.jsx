@@ -30,7 +30,7 @@ function Cards() {
               text='For Employers - 
               We are here to make hiring a little easier'
 
-              path='/signupEmp'
+              path='/Company'
               
               />
           </ul>
