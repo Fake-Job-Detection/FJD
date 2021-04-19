@@ -14,6 +14,14 @@ import Apply from './components/pages/Apply';
 import Forgotpassword from './components/pages/Forgotpassword';
 import Signupjob from './components/pages/Signupjob';
 
+import Company from './components/pages/Company';
+import CompanyAdd from './components/pages/CompanyAdd';
+import CompanyHome from './components/pages/CompanyHome';
+import ComCreateJob from './components/pages/ComCreateJob';
+import ComPreview from './components/pages/ComPreview';
+import ComValidateInfo from './components/pages/ComValidateInfo';
+
+
 
 function App() {
   return (
@@ -31,6 +39,13 @@ function App() {
        <Route path='/Apply' component={Apply} />
        <Route path='/Signupjob' component={Signupjob} />
        <Route path='/Forgotpassword' component={Forgotpassword} />
+	   
+	    <Route path='/Company' component={Company} />
+		<Route path='/companyAdd' component={CompanyAdd} />
+       <Route path='/companyHome' component={CompanyHome} />
+       <Route path='/ComCreateJob' component={ComCreateJob} />
+       <Route path='/ComPreview' component={ComPreview} />
+       <Route path='/ComValidateInfo' component={ComValidateInfo} />
        
      </Switch>
      </Router>
