@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.mw400 {
+  max-width: 400px;
+}
+
+.center {
+  
+  margin: auto;
+  width: 50%;
+ 
+}
+.main {
+  background-color:white;
+  opacity:0.7;
+  color: black;
+  margin: auto;
+  width: 50%;
+  
+  }
+.input{
+  color: white;  
+}
+.select{
+  background-color: black;
+}
+.main-button{
+  background: rgba(16,89,255, 1);
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
