@@ -1,0 +1,12 @@
+{
+  "company": {
+    "company 1": {
+      "ratings": 4,
+      "numofJobPost": 12
+    },
+    "company 2": {
+      "ratings": 7",
+      "numofJobPost": 44
+    }
+  }
+}
