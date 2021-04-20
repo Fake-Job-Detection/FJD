@@ -1,7 +1,7 @@
 import pickle
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
-from Allcodefiles.Exceptionhandling import handle
+from Exceptionhandling import handle
 
 
 def train_and_save_model(data):
