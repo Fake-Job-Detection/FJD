@@ -5,6 +5,7 @@ from DataHandling import categorical_cols_train
 from model.Model import train_and_save_model
 from Exceptionhandling import handle
 
+
 def training():
     try:
         data = read_csv('Data/train.csv')
