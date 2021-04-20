@@ -9,7 +9,7 @@ export default function CompanyAdd() {
             <br/>
             <br/>
             <form action="http://localhost:3000/ComCreateJob">
-				<input  type="submit" value=" + Create New Job"  />
+			<center>	<input  type="submit" value=" + Create New Job"  /> </center>
 			</form>
         </div>
         
