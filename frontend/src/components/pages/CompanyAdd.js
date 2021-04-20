@@ -349,8 +349,8 @@ class UploadPreview extends React.Component {
             <div>
                 <input type="file" onChange={this.onChange} />
                 {this.state.file && (
-                    <div className="main-button" style={{ textAlign: "center" }}>
-                        <button  onClick={this.submit}>Upload & Preview video</button>
+                    <div className="main" style={{ textAlign: "center" }}>
+                        <button  onClick={this.submit}></button>
                         
 			
                     </div>

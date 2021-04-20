@@ -1,6 +1,7 @@
 import React from "react";
 import "./Company";
 
+
 export default function ComValidateInfo(values) {
     let errors = {};
   

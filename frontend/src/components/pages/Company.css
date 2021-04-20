@@ -1,4 +1,4 @@
-/* Reset styles */
+
 html,body, body * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -6,7 +6,7 @@ html,body, body * {
     padding:0;
     color:inherit;
     background-color:inherit;
-    /* border:2px solid orange; */
+    
 }
 
 body {
@@ -32,7 +32,7 @@ body {
     box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
     overflow: hidden;
     color:#ffffff;
-    background: linear-gradient(180deg, rgba(19,38,79,1) 0%, rgba(22,147,198,1) 52%, rgba(255,255,255,0) 82%);
+    background: linear-gradient(180deg, rgb(100, 97, 97) 0%, rgb(144, 148, 148) 52%, rgba(97, 95, 95, 0) 82%);
 }
 
 /* Nav buttons */
@@ -55,7 +55,7 @@ button:focus {
 }
 button.active {
     padding-bottom: 10px;
-    border-bottom: solid 2px #1059FF;
+    border-bottom: solid 2px #424244;
 }
 
 /* footer: forgot section */
@@ -87,14 +87,14 @@ input.submit {
     text-transform: uppercase;
     font-size: 1em;
     text-align: center;
-    color: rgba(255,255,255, 1);
+    color: rgb(219, 217, 238);
     padding: 8px 0px;
     width: 100%;
     height: 35px;
     border: none;
     border-radius: 20px;
     margin-top: 23px;
-    background-color: rgba(16,89,255, 1);
+    background-color: rgb(10, 36, 114);
 
 }
 
