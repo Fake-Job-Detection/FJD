@@ -134,8 +134,7 @@ function RegisterForm() {
 		<React.Fragment>
 		
 			
-		<label for="Name">Name</label>
-			<input type="text" id="Name" />
+		
 			<label for="CMP_Name">Company Name</label>
 			<input type="text" id="CMP_Name" />
 			<label for="email">email</label>
