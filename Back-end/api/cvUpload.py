@@ -18,7 +18,7 @@ from flask import *
 cvUpload = Blueprint('cvUpload', __name__, url_prefix='/api')
 
 
-@app.route('/home', methods=['GET', 'POST'])
+@cvUpload.route('/home', methods=['GET', 'POST'])
 def basic():
     if request.method == 'POST':
         upload = request.files['upload']
@@ -27,7 +27,7 @@ def basic():
     return render_template('CvHome.html')
 
 
-@app.route('/uploads', methods=['GET', 'POST'])
+@cvUpload.route('/uploads', methods=['GET', 'POST'])
 def uploads():
     if request.method == 'POST':
         return redirect(url_for('basic'))
@@ -37,5 +37,5 @@ def uploads():
     return render_template('upload.html')
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)

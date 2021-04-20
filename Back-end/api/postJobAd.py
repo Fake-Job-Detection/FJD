@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 postJobAd = Blueprint('postJobAd', __name__, url_prefix='/api')
 
-@app.route('/', methods=['GET', 'POST'])
+@postJobAd.route('/', methods=['GET', 'POST'])
 def basic():
 	if request.method == 'POST':
 		if request.form['submit'] == 'add':
@@ -34,7 +34,7 @@ def basic():
 		return render_template('index.html')
 	return render_template('index.html')
 
-if __name__ == '__main__':
-	app.run(debug=True)
+# if __name__ == '__main__':
+# 	app.run(debug=True)
 
 
