@@ -180,4 +180,36 @@ def removeuncessary(text):
     except Exception as e:
         handle('removing unnecessary text')
 
+def synonym_relation(text1, text2):
+    try:
+        if (text1 == 'no info' or text2 == 'no info'):
+            return 0
+        else:
+            text1 = stopwordsremove(text1)
+            text2 = stopwordsremove(text2)
+            syn_set = set()
+            count = 0
+            if (len(text1) == 0 or len(text2) == 0):
+                return 0
+            if (len(text1) < len(text2)):
+                for word in text2:
+                    for syn in wordnet.synsets(word):
+                        for l in syn.lemmas():
+                            syn_set.add(l.name())
 
+                for word in text1:
+                    if word in syn_set:
+                        count += 1
+                return (count / len(text1))
+            else:
+                for word in text1:
+                    for syn in wordnet.synsets(word):
+                        for l in syn.lemmas():
+                            syn_set.add(l.name())
+
+                for word in text2:
+                    if word in syn_set:
+                        count += 1
+                return (count / len(text2))
+    except Exception as e:
+        handle('synonym relation finding process')
