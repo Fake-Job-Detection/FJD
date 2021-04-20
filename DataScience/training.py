@@ -1,9 +1,9 @@
-from Allcodefiles.Dataread import read_csv
-from Allcodefiles.DataHandling import missing_values
-from Allcodefiles.DataHandling import texthandling
-from Allcodefiles.DataHandling import categorical_cols_train
+from Dataread import read_csv
+from DataHandling import missing_values
+from DataHandling import texthandling
+from DataHandling import categorical_cols_train
 from model.Model import train_and_save_model
-from Allcodefiles.Exceptionhandling import handle
+from Exceptionhandling import handle
 
 def training():
     try:
