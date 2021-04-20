@@ -1,7 +1,7 @@
 import argparse
-from DataScience.training import training
-from DataScience.testing import testing
-from DataScience.Exceptionhandling import handle
+from training import training
+from testing import testing
+from Exceptionhandling import handle
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'Fake Job Prediction')
