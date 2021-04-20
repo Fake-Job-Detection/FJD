@@ -11,7 +11,7 @@ from nltk.probability import FreqDist
 from nltk.corpus import wordnet
 import category_encoders as ce
 import pickle
-from Allcodefiles.Exceptionhandling import handle
+from Exceptionhandling import handle
 
 stop_words = set(stopwords.words('english'))
 
