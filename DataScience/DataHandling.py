@@ -227,3 +227,12 @@ def categorical_cols_train(data):
         return newdata
     except Exception as e:
         handle('categorical column handling')
+
+def categorical_cols_test(data):
+    print('Categorical Encoding')
+    try:
+        encoder = pickle.load(open("model/encoder.p", "rb"))
+        newdata = encoder.transform(data)
+        return newdata
+    except Exception as e:
+        handle('categorical columns handling for testing process')
