@@ -5,6 +5,7 @@ from Allcodefiles.DataHandling import categorical_cols_test
 from Allcodefiles.Predict import load_model_predict
 from Allcodefiles.Exceptionhandling import handle
 
+
 def testing():
     try:
         data = read_csv('data/test.csv')
