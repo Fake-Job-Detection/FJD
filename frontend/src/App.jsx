@@ -4,7 +4,6 @@ import Head from './components/Head';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Signup from './components/pages/Signup';
 
 import Homejobseeker from './components/pages/Homejobseeker';
 import ViewCategories from './components/pages/ViewCategories';
@@ -30,7 +29,6 @@ function App() {
      <Head />
      <Switch>
        <Route path='/' exact component={Home} />
-       <Route path='/signup' component={Signup} />
       
        <Route path='/homejobseeker' component={Homejobseeker} />
        <Route path='/ViewCategories' component={ViewCategories} />

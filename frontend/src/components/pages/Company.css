@@ -10,7 +10,7 @@ html,body, body * {
 }
 
 body {
-    background-image: url(Com.jpg);
+    background-image: url(images.jpg);
     background-size:  cover;
     background-position:center center;
 

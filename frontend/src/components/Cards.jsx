@@ -15,7 +15,7 @@ function Cards() {
               text='For Jobseekers - 
               Search Jobs, apply with one click'
              
-              path='/signup'
+              path='/signupjob'
             />
 
             
