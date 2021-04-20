@@ -15,9 +15,10 @@ storage = firebase.storage()
 
 from flask import *
 
-app = Flask(__name__)
+cvUpload = Blueprint('cvUpload', __name__, url_prefix='/api')
 
-@app.route('/', methods=['GET', 'POST'])
+
+@app.route('/home', methods=['GET', 'POST'])
 def basic():
     if request.method == 'POST':
         upload = request.files['upload']
@@ -34,6 +35,7 @@ def uploads():
         links = storage.child('images/new.mp4').get_url(None)
         return render_template('upload.html', l=links)
     return render_template('upload.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

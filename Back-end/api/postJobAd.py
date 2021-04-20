@@ -17,6 +17,8 @@ from flask import *
 
 app = Flask(__name__)
 
+postJobAd = Blueprint('postJobAd', __name__, url_prefix='/api')
+
 @app.route('/', methods=['GET', 'POST'])
 def basic():
 	if request.method == 'POST':
