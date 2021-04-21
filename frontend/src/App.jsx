@@ -23,14 +23,7 @@ import ContactUs from './components/pages/ContactUs';
 import Alljobs from './components/pages/Alljobs';
 import ComForgotPw from './components/pages/ComForgotPw';
 import AboutUs from './components/pages/AboutUs';
-
-
-
-
-
-
-
-
+import CompanyDetails from './components/pages/CompanyDetails';
 
 function App() {
 
@@ -59,6 +52,7 @@ function App() {
        <Route path='/ContactUs' component={ContactUs} />
        <Route path='/ComForgotPw' component={ComForgotPw} />
        <Route path='/AboutUs' component={AboutUs} />
+       <Route path='/CompanyDetails' component={CompanyDetails} />
        
      </Switch>
      </Router>
