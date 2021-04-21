@@ -20,25 +20,25 @@ function Categories() {
           <CardItem
               src='images/IT.jpg'
               text='IT/ Software'
-              path='/Jobposting'
+              path='/Jobads'
             />
 
               <CardItem
               src='images/Engineering.jpg'
               text='Engineering/ Manufacturing'
-              path='/Jobposting'
+              path='/Jobads'
             />
 
             <CardItem
               src='images/Health.png'
               text='Nursing/ Healthcare'
-              path='/Jobposting'
+              path='/Jobads'
             />
 
             <CardItem
               src='images/Business.png'
               text='Business management'
-              path='/Jobposting'
+              path='/Jobads'
             />
 
             
@@ -49,26 +49,26 @@ function Categories() {
             <CardItem
               src='images/Sales.jpg'
               text='Sales/ Marketting'
-              path='/Jobposting'
+              path='/Jobads'
             
             />
 
           <CardItem
               src='images/Architecture.png'
               text='Architecture'
-              path='/Jobposting'
+              path='/Jobads'
             />
             
             <CardItem
               src='images/Hotel.jpg'
               text='Hospitality/ Leisure'
-              path='/Jobposting'
+              path='/Jobads'
             />
             
             <CardItem
               src='images/Telecom.jpg'
               text='Tele Communication'
-              path='/Jobposting'
+              path='/Jobads'
             />
 
             
@@ -77,8 +77,8 @@ function Categories() {
 
             <CardItem
               src='images/ViewAll.png'
-              text='View All Categories'
-              path='/viewCategories'
+              text='All Jobs'
+              path='/Alljobs'
             />
           </ul>
         </div>

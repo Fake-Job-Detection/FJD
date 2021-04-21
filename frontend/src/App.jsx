@@ -6,7 +6,7 @@ import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Homejobseeker from './components/pages/Homejobseeker';
-import ViewCategories from './components/pages/ViewCategories';
+import ViewCategories from './components/pages/Alljobs';
 import Jobposting from './components/pages/Jobposting';
 import Jobads from './components/pages/Jobads';
 import Apply from './components/pages/Apply';
@@ -21,6 +21,7 @@ import ComCreateJob from './components/pages/ComCreateJob';
 import ComPreview from './components/pages/ComPreview';
 import ComValidateInfo from './components/pages/ComValidateInfo';
 import ContactUs from './components/pages/ContactUs';
+import Alljobs from './components/pages/Alljobs';
 
 
 
@@ -36,7 +37,7 @@ function App() {
        <Route path='/' exact component={Home} />
       
        <Route path='/homejobseeker' component={Homejobseeker} />
-       <Route path='/ViewCategories' component={ViewCategories} />
+       <Route path='/Alljobs' component={Alljobs} />
        <Route path='/Jobposting' component={Jobposting} />
        <Route path='/Jobads' component={Jobads} />
        <Route path='/Apply' component={Apply} />
