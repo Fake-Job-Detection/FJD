@@ -22,6 +22,8 @@ import ComPreview from './components/pages/ComPreview';
 import ComValidateInfo from './components/pages/ComValidateInfo';
 import ContactUs from './components/pages/ContactUs';
 import ComForgotPw from './components/pages/ComForgotPw';
+import AboutUs from './components/pages/AboutUs';
+
 
 
 
@@ -55,6 +57,7 @@ function App() {
        <Route path='/ComValidateInfo' component={ComValidateInfo} />
        <Route path='/ContactUs' component={ContactUs} />
        <Route path='/ComForgotPw' component={ComForgotPw} />
+       <Route path='/AboutUs' component={AboutUs} />
        
      </Switch>
      </Router>

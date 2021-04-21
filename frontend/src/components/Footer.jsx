@@ -10,7 +10,7 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Tech Amigos</h2>
-            <Link to='/sign-up'>About Us</Link>
+            <Link to='/AboutUs'>About Us</Link>
             <Link to='/Testimonials'>Testimonials</Link>
             <Link to='/'>Guides</Link>
             
