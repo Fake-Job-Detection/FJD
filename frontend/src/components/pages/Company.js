@@ -1,8 +1,7 @@
 import './Company.css';
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import { Link } from 'react-router-dom';
-import validate from './ComValidateInfo';
 
 
 export default function Company() {

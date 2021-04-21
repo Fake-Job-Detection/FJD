@@ -1,7 +1,5 @@
-import React,{Component} from 'react';
+import React from 'react';
 import '../../App.css';
-import Jobpost from "../../jobpost.jpg";
-import Footer from '../Footer';
 import { Link } from 'react-router-dom';
 import './Jobposting.css';
 import './Rating.css';

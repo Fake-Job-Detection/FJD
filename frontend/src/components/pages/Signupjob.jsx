@@ -1,8 +1,8 @@
 import './Company.css';
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { useSpring, animated } from "react-spring";
-import {Link, NavLink} from "react-router-dom";
-import validate from './ComValidateInfo';
+import {Link} from "react-router-dom";
+
 
 
 export default function Signupjob() {

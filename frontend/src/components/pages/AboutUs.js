@@ -1,5 +1,5 @@
 import React from "react";
-import "./ComPreview.css";
+import "./AboutUs.css";
 
 export default function AboutUs() {
     return (

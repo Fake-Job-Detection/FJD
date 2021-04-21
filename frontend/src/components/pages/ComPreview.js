@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./ComPreview.css";
 
 export default function ComPreview() {
@@ -14,6 +15,9 @@ export default function ComPreview() {
       
       <p>Video about the the company to expose their workplace background for the
           jobseekers and Rates job posts with numbers 0 to 10 on the basis of the parameters.</p>
+          <Link to="/CompanyDetails" >
+             <p>View your profile</p>
+            </Link>
       <div class="box">
       <div class="rating">
 
