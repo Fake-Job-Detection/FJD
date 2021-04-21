@@ -27,6 +27,11 @@ function Jobposting() {
             <p>{post.department}</p>
             <br></br>
             <p>{post.employment}</p>
+
+            <Link to="/CompanyDetails" >
+             <h4>Company Details</h4>
+            </Link>
+
             </>
           )
         })}
