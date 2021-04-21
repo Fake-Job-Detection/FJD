@@ -6,7 +6,6 @@ import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Homejobseeker from './components/pages/Homejobseeker';
-import ViewCategories from './components/pages/Alljobs';
 import Jobposting from './components/pages/Jobposting';
 import Jobads from './components/pages/Jobads';
 import Apply from './components/pages/Apply';
@@ -22,13 +21,10 @@ import ComPreview from './components/pages/ComPreview';
 import ComValidateInfo from './components/pages/ComValidateInfo';
 import ContactUs from './components/pages/ContactUs';
 import Alljobs from './components/pages/Alljobs';
-
-
-
-
-
-
+import ComForgotPw from './components/pages/ComForgotPw';
+import CompanyDetails from './components/pages/CompanyDetails';
 function App() {
+
   return (
     <>
     <Router>
@@ -52,6 +48,8 @@ function App() {
        <Route path='/ComPreview' component={ComPreview} />
        <Route path='/ComValidateInfo' component={ComValidateInfo} />
        <Route path='/ContactUs' component={ContactUs} />
+       <Route path='/ComForgotPw' component={ComForgotPw} />
+       <Route path='/CompanyDetails' component={CompanyDetails} />
        
      </Switch>
      </Router>

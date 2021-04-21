@@ -1,5 +1,5 @@
 import React from "react";
-import "./Company";
+import company from "./Company";
 
 
 export default function ComValidateInfo(values) {

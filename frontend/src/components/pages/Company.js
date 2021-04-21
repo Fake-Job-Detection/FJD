@@ -1,7 +1,7 @@
 import './Company.css';
 import React, { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
-import {NavLink} from "react-router-dom";
+import { Link } from 'react-router-dom';
 import validate from './ComValidateInfo';
 
 
@@ -97,7 +97,10 @@ export default function Company() {
 				</animated.form>
 			</div>
 			<animated.div className="forgot-panel" style={loginProps}>
-				<a herf="#">Forgot your password</a>
+			<Link to="/Forgotpassword" >
+             <h4>Forgotpassword?</h4>
+            </Link>
+			
 			</animated.div>
 		</div>
 	);

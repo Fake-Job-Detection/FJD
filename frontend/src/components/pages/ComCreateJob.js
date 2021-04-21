@@ -1,8 +1,6 @@
-
-
 import React from 'react';
 import "./CompanyAdd.css";
-//import { Searchbar } from 'react-native-paper';
+
 
 export default function ComCreateJob() {
     return (
