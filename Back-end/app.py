@@ -4,7 +4,7 @@ from flask import Flask,redirect, render_template, request, url_for
 app = Flask(__name__)  # Initialze flask constructor
 config = {
     "apiKey": "AIzaSyA4I37TaYN7Ixo8L53g_kBts_hNyWTEPFE",
-    " authDomain": "backend1-55251.firebaseapp.com",
+    "authDomain": "backend1-55251.firebaseapp.com",
     "projectId": "backend1-55251",
     "storageBucket": "backend1-55251.appspot.com",
     "messagingSenderId": "265327075971",
