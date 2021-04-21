@@ -12,6 +12,7 @@ import Jobads from './components/pages/Jobads';
 import Apply from './components/pages/Apply';
 import Forgotpassword from './components/pages/Forgotpassword';
 import Signupjob from './components/pages/Signupjob';
+import Testimonials from './components/pages/Testimonials';
 
 import Company from './components/pages/Company';
 import CompanyAdd from './components/pages/CompanyAdd';
@@ -37,6 +38,7 @@ function App() {
        <Route path='/Apply' component={Apply} />
        <Route path='/Signupjob' component={Signupjob} />
        <Route path='/Forgotpassword' component={Forgotpassword} />
+       <Route path='/Testimonials' component={Testimonials} />
 	   
 	    <Route path='/Company' component={Company} />
 		<Route path='/companyAdd' component={CompanyAdd} />
