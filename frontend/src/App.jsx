@@ -20,6 +20,10 @@ import CompanyHome from './components/pages/CompanyHome';
 import ComCreateJob from './components/pages/ComCreateJob';
 import ComPreview from './components/pages/ComPreview';
 import ComValidateInfo from './components/pages/ComValidateInfo';
+import ContactUs from './components/pages/ContactUs';
+
+
+
 
 
 
@@ -40,12 +44,13 @@ function App() {
        <Route path='/Signupjob' component={Signupjob} />
        <Route path='/Forgotpassword' component={Forgotpassword} />
 	   
-	    <Route path='/Company' component={Company} />
-		<Route path='/companyAdd' component={CompanyAdd} />
+	     <Route path='/Company' component={Company} />
+	   	 <Route path='/companyAdd' component={CompanyAdd} />
        <Route path='/companyHome' component={CompanyHome} />
        <Route path='/ComCreateJob' component={ComCreateJob} />
        <Route path='/ComPreview' component={ComPreview} />
        <Route path='/ComValidateInfo' component={ComValidateInfo} />
+       <Route path='/ContactUs' component={ContactUs} />
        
      </Switch>
      </Router>
