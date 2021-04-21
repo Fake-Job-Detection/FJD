@@ -1,0 +1,10 @@
+.p1 
+{
+    width: 26em; 
+    border: 1px solid #000000;
+    word-wrap: break-word;
+    background-color:rgba(194, 191, 191, 0.3);
+    font-family:'Times New Roman';
+    margin: auto;
+    width: 50%;
+}

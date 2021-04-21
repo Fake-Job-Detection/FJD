@@ -6,9 +6,9 @@ html,body, body * {
     padding:0;
     color:inherit;
     background-color:inherit;
-    
-}
+    }
 
+    
 body {
     background-image: url(Com.jpg);
     background-size:  cover;
@@ -119,7 +119,7 @@ form, .forgot-panel {
     transition: all .5s ease;
 
 }
-cmphome {
+.cmphome {
     left:500px;
     top:-230px;
     position:relative;

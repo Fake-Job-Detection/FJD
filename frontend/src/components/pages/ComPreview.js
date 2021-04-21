@@ -1,12 +1,13 @@
 import React from "react";
-import "./CompanyAdd.css";
+import "./ComPreview.css";
 
 export default function ComPreview() {
     return (
-        <div className="main">
-        <table>
-        <tr>
-            <td colspan = '2'><h4><i>Video Preview</i></h4></td>
+    <div className="preview">
+            
+    <table>
+    <tr>
+    <td colspan = '2'><h4><i> Video Preview</i></h4></td> 
       </tr> 
       <br/>
       <br/>
@@ -33,8 +34,16 @@ export default function ComPreview() {
       <br/>
       <br/>
       <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       </table> 
       </div>
+      
       
     );
 }   
