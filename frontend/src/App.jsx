@@ -22,7 +22,16 @@ import ComValidateInfo from './components/pages/ComValidateInfo';
 import ContactUs from './components/pages/ContactUs';
 import Alljobs from './components/pages/Alljobs';
 import ComForgotPw from './components/pages/ComForgotPw';
-import CompanyDetails from './components/pages/CompanyDetails';
+import AboutUs from './components/pages/AboutUs';
+
+
+
+
+
+
+
+
+
 function App() {
 
   return (
@@ -49,7 +58,7 @@ function App() {
        <Route path='/ComValidateInfo' component={ComValidateInfo} />
        <Route path='/ContactUs' component={ContactUs} />
        <Route path='/ComForgotPw' component={ComForgotPw} />
-       <Route path='/CompanyDetails' component={CompanyDetails} />
+       <Route path='/AboutUs' component={AboutUs} />
        
      </Switch>
      </Router>
