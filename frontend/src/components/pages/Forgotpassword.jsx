@@ -31,7 +31,7 @@ export default function Forgotpassword() {
 
      
       <div className="footer">
-      <Link to="/Signup" className="btn btn-primary">
+      <Link to="/Signupjob" className="btn btn-primary">
           Reset
      </Link>
 

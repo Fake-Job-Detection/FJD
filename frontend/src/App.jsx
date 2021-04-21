@@ -4,7 +4,6 @@ import Head from './components/Head';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Signup from './components/pages/Signup';
 
 import Homejobseeker from './components/pages/Homejobseeker';
 import ViewCategories from './components/pages/ViewCategories';
@@ -13,6 +12,7 @@ import Jobads from './components/pages/Jobads';
 import Apply from './components/pages/Apply';
 import Forgotpassword from './components/pages/Forgotpassword';
 import Signupjob from './components/pages/Signupjob';
+import Testimonials from './components/pages/Testimonials';
 
 import Company from './components/pages/Company';
 import CompanyAdd from './components/pages/CompanyAdd';
@@ -34,7 +34,6 @@ function App() {
      <Head />
      <Switch>
        <Route path='/' exact component={Home} />
-       <Route path='/signup' component={Signup} />
       
        <Route path='/homejobseeker' component={Homejobseeker} />
        <Route path='/ViewCategories' component={ViewCategories} />
@@ -43,6 +42,7 @@ function App() {
        <Route path='/Apply' component={Apply} />
        <Route path='/Signupjob' component={Signupjob} />
        <Route path='/Forgotpassword' component={Forgotpassword} />
+       <Route path='/Testimonials' component={Testimonials} />
 	   
 	     <Route path='/Company' component={Company} />
 	   	 <Route path='/companyAdd' component={CompanyAdd} />

@@ -12,7 +12,7 @@ function Footer() {
           <div class='footer-link-items'>
             <h2>Tech Amigos</h2>
             <Link to='/sign-up'>About Us</Link>
-            <Link to='/'>Testimonials</Link>
+            <Link to='/Testimonials'>Testimonials</Link>
             <Link to='/'>Guides</Link>
             
           </div>
