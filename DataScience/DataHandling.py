@@ -231,6 +231,9 @@ def categorical_cols_train(data):
 def categorical_cols_test(data):
     print('Categorical Encoding')
     try:
+        '''
+        this is where the encoder is loaded back again to be used
+        to test data'''
         encoder = pickle.load(open("model/encoder.p", "rb"))
         newdata = encoder.transform(data)
         return newdata
