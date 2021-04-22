@@ -1,9 +1,8 @@
 
 import pyrebase
-from flask import Flask, flash, redirect, render_template, request, session, abort, url_for, Blueprint
+from flask import Flask, flash, redirect, render_template, request, session, abort, url_for
 
-CompanySigninSignUp = Flask('CompanySignSignUp', __name__)
-# localhost:5000/api/CompanySignSignUp/results
+app = Flask(__name__)
 
 config = {
     "apiKey": "AIzaSyCviAjC1G0OSRpxuVK6LTvkpPYUHJTfHa0",
@@ -23,17 +22,17 @@ db = firebase.database()
 person = {"is_logged_in": False, "name": "", "email": "", "uid": ""}
 
 #Login
-@CompanySigninSignUp.route("/login")
+@app.route("/login")
 def login():
     return render_template("login.html")
 
 #Sign up/ Register
-@CompanySigninSignUp.route("/signup")
+@app.route("/signup")
 def signup():
     return render_template("signup.html")
 
 #Welcome page
-@CompanySigninSignUp.route("/welcome")
+@app.route("/welcome")
 def welcome():
     if person["is_logged_in"] == True:
         return render_template("welcome.html", email = person["email"], name=person["name"])
@@ -41,7 +40,7 @@ def welcome():
         return redirect(url_for('login'))
 
 #If someone clicks on login, they are redirected to /result
-@CompanySigninSignUp.route("/result", methods = ["POST", "GET"])
+@app.route("/result", methods = ["POST", "GET"])
 def result():
     if request.method == "POST":        #Only if data has been posted
         result = request.form           #Get the data
@@ -70,7 +69,7 @@ def result():
             return redirect(url_for('login'))
 
 #If someone clicks on register, they are redirected to /register
-@CompanySigninSignUp.route("/register", methods = ["POST", "GET"])
+@app.route("/register", methods = ["POST", "GET"])
 def register():
     if request.method == "POST":        #Only listen to POST
         result = request.form           #Get the data submitted
@@ -103,3 +102,5 @@ def register():
         else:
             return redirect(url_for('register'))
 
+if __name__ == "__main__":
+    app.run()

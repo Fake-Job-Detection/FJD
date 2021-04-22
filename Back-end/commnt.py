@@ -1,27 +1,34 @@
+import os
 from _weakref import ref
-
+import firebase
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
 from flask import Flask, render_template, request
 
-from send_mail import send_mail
+
+
+
+
 
 app = Flask(__name__)
-cred = credentials.Certificate('C:/Users/MAC/Desktop/SDGPFINAL/FJD/Back-end/flask1.json')
+cred = credentials.Certificate("C://Users//Disney//3D Objects//SDGP//FJD//Back-end//flask1.json")
 firebase_admin.initialize_app(cred)
 
 # creating the database field
 # company_ref = ref.child('company')
 
+template_dir = os.path.abspath('templates')
+# commnt = Blueprint('commnt', _name_, url_prefix='/api')
 
-class Feedback(db.Model):
+
+
+class Feedback():
     tablename = 'feedback'
-    rating = db.Column(db.Integer)
 
 
     # initializer//constructor
-    def __init__(self, rating):
+    def _init_(self, rating):
         self.rating = rating
 
 
@@ -54,5 +61,4 @@ def submit():
 
 
 if __name__ == '__main__':
-    app.debug = True
-    app.run()
+    app.run(debug=True)

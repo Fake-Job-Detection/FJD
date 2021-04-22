@@ -1,15 +1,14 @@
 import pyrebase
-from flask import Flask,redirect, render_template, request, url_for
+from flask import Flask, redirect, render_template, request, url_for
 
 app = Flask(__name__)  # Initialze flask constructor
 config = {
-    "apiKey": "AIzaSyA4I37TaYN7Ixo8L53g_kBts_hNyWTEPFE",
-    " authDomain": "backend1-55251.firebaseapp.com",
-    "projectId": "backend1-55251",
-    "storageBucket": "backend1-55251.appspot.com",
-    "messagingSenderId": "265327075971",
-    "appId": "1:265327075971:web:9db9a820815d113295b1b6",
-    " measurementId": "G-VPGYWLZ7K2"
+    "apiKey": "AIzaSyCviAjC1G0OSRpxuVK6LTvkpPYUHJTfHa0",
+    "authDomain": "fjd-backend.firebaseapp.com",
+    "databaseURL": "https://fjd-backend-default-rtdb.firebaseio.com",
+    "projectId": "fjd-backend",
+    "storageBucket": "fjd-backend.appspot.com",
+    "messagingSenderId": "176438699742"
 }
 
 # initialize firebase
@@ -19,9 +18,7 @@ auth = firebase.auth()
 # Initialze person as dictionary
 person = {"is_logged_in": False, "email": "", "uid": ""}
 
-@app.route('/')
-def hello_world():
-    return 'Hello, Hairthentic!'
+
 # Login
 @app.route("/result")
 def login():

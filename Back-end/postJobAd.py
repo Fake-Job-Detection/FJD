@@ -17,15 +17,17 @@ from flask import *
 
 app = Flask(__name__)
 
-postJobAd = Blueprint('postJobAd', __name__, url_prefix='/api')
-
-@postJobAd.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def basic():
 	if request.method == 'POST':
 		if request.form['submit'] == 'add':
 
-			name = request.form['name']
+			name = request.form['jobId']
+			title = request.form['title']
+			location = request.form['location']
 			db.child("todo").push(name)
+			db.child("todo").push(title)
+			db.child('todo').push(location)
 			todo = db.child("todo").get()
 			to = todo.val()
 			return render_template('index.html', t=to.values())
@@ -34,7 +36,7 @@ def basic():
 		return render_template('index.html')
 	return render_template('index.html')
 
-# if __name__ == '__main__':
-# 	app.run(debug=True)
+if __name__ == '__main__':
+	app.run(debug=True)
 
 
