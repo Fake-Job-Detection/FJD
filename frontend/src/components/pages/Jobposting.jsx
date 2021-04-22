@@ -2,7 +2,6 @@ import React from 'react';
 import '../../App.css';
 import { Link } from 'react-router-dom';
 import './Jobposting.css';
-import './Rating.css';
 import Data from "./data.json";
 
 function Jobposting() {

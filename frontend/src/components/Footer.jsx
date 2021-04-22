@@ -4,29 +4,28 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div className='footer-container'>
+    <div className='footer-main'>
       
-      <div class='footer-links'>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
+      <div class='footer-links-main'>
+        <div className='footer-column'>
+          <div class='footer-links'>
             <h2>Tech Amigos</h2>
             <Link to='/AboutUs'>About Us</Link>
             <Link to='/Testimonials'>Testimonials</Link>
-            <Link to='/'>Guides</Link>
+           
             
           </div>
-          <div class='footer-link-items'>
+          <div class='footer-links'>
             <h2>Employers</h2>
-            <Link to='/'>Get an employer</Link>
-            <Link to='/'>Account</Link>
-            <Link to='/'>Post a job</Link>
+            <Link to='/Company'>Sign In</Link>
+            <Link to='/Company'>Post a job</Link>
           </div>
         </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
+        <div className='footer-column'>
+          <div class='footer-links'>
             <h2>Community</h2>
-            <Link to='/'>Help/ Contact Us</Link>
-            <Link to='/'>Guidelines</Link>
+            <Link to='/ContactUs'>Help/ Contact Us</Link>
+            
         
           </div>
           
