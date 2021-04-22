@@ -1,10 +1,10 @@
 import React from 'react';
-import "./CompanyAdd.css";
+import "./ComCreateJob.css";
 
 
 export default function ComCreateJob() {
     return (
-      <div className="main">
+      <div className="create">
       <table>
       <tr>
           <td colspan = '2'><h3><i>Post Page Form</i></h3></td>
