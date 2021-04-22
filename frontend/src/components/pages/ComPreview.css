@@ -2,7 +2,7 @@
 .preview {
     text-align: center;
     background-color:rgb(252, 252, 252);
-    opacity:1.2;
+    opacity:0.9;
     color: black;
     margin: auto;
     width: 70%;
@@ -60,9 +60,19 @@
     width: 850px;
 }
 .signout form {
-        text-align: right;
+        float:right;
+        width:1%;
     }
     .signout input {
         width: 75px;
     }
+
+    .details {
+        text-align: center;
+        background-color:rgb(252, 252, 252);
+        opacity:0.7;
+        color: black;
+        margin: auto;
+        width: 70%;
+        }
     
