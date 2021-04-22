@@ -1,7 +1,3 @@
-import React from "react";
-import company from "./Company";
-
-
 export default function ComValidateInfo(values) {
     let errors = {};
   
@@ -11,9 +7,7 @@ export default function ComValidateInfo(values) {
     if (!values.CMP_Name.trim()) {
       errors.CMP_Name = 'Company Name required';
     }
-    // else if (!/^[A-Za-z]+/.test(values.name.trim())) {
-    //   errors.name = 'Enter a valid name';
-    // }
+    
   
     if (!values.email) {
       errors.email = 'Email required';
