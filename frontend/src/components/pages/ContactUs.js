@@ -3,7 +3,7 @@ import "./ContactUs.css";
 
 export default function ContactUs() {
     return (
-        <div className="p1">
+        <div className="contact-us ">
         <p>M.R.M.Omar - omar.2018527@iit.ac.lk </p>
         <br/>
         

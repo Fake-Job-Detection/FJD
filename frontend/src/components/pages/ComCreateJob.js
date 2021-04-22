@@ -11,7 +11,7 @@ export default function ComCreateJob() {
       </tr>     
       <tr>
       <td><label for="job_id">Job ID</label></td>
-      <td><input type="number" id="job_id" /></td>
+      <td><input type="text" id="job_id" /></td>
       <br/>
       <br/>
       </tr>
@@ -39,7 +39,7 @@ export default function ComCreateJob() {
 
       <tr>
       <td><label for="salary range">Salary range</label></td>
-      <td><input type="currency" id="salary range" /></td>
+      <td><input type="text" id="salary range" /></td>
       <br/>
       <br/>
       </tr>

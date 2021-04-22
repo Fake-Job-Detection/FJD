@@ -3,7 +3,7 @@ import "./AboutUs.css";
 
 export default function AboutUs() {
     return (
-    <div className="preview">       
+    <div className="aboutus">       
     <table>
     <tr>
     <td colspan = '2'><h3><i></i></h3></td> 
