@@ -35,7 +35,6 @@ body {
     background: linear-gradient(180deg, rgb(100, 97, 97) 0%, rgb(144, 148, 148) 52%, rgba(97, 95, 95, 0) 82%);
 }
 
-/* Nav buttons */
 .nav-buttons {
     width: 100%;
     height: 100px;
@@ -69,7 +68,7 @@ button.active {
     border-top: solid 1px rgba(255,255,255,.3);
 }
 
-/* form styling */
+
 .form-group input {
     width: 100%;
     height: 35px;
@@ -98,7 +97,7 @@ input.submit {
 
 }
 
-/*Form positioning and animation */
+
 
 form#registerform {
     left:500px;

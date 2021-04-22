@@ -9,7 +9,7 @@ function Apply() {
       <h3>CV Submission</h3>
 
 <div class="container">
-  <form action="/action_page.php">
+<form action="http://localhost:3000/Homejobseeker">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
 
@@ -29,7 +29,7 @@ function Apply() {
     
     <p><h5>Click on the "Choose File" button to upload a file:</h5></p>
 
-      <form action="/action_page.php">
+    <form action="http://localhost:3000/Homejobseeker">
          <input type="file" id="myFile" name="filename"/>
          <input type="submit" value="Upload"/>
       </form>

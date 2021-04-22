@@ -1,6 +1,6 @@
 import React from 'react';
 import "./CompanyAdd.css";
-//import { Searchbar } from 'react-native-paper';
+
 
 export default function CompanyAdd() {
     return (
@@ -18,25 +18,4 @@ export default function CompanyAdd() {
 
 
 
-/*
-export default class CompanyHome extends React.Component {
-  state = {
-    firstQuery: '',
-  };
 
-  render() {
-    const { firstQuery } = this.state;
-    return (
-     <div className="main">
-      <Searchbar
-        placeholder="Search"
-        onChangeText={query => { this.setState({ firstQuery: query }); }}
-        value={firstQuery}
-        
-      />
-      
-      </div>
-    );
-  }
-}
-*/
