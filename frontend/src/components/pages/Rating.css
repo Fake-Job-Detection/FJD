@@ -1,0 +1,42 @@
+.box{
+    width: 500px;
+    margin:0;
+    display:flex;
+    
+}
+
+.rating{
+    top: 450px;
+    right: 250px;  
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #f00, #0f0);
+}
+
+.rating input{
+    display: none;
+}
+
+.rating label{
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    border-right: 1px solid #000;
+}
+
+.rating input[type="radio"]:hover~ label,
+.rating input[type="radio"]:checked~ label
+{
+ background: transparent;
+}

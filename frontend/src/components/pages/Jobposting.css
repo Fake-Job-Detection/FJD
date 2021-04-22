@@ -1,0 +1,26 @@
+div.b {
+position: absolute;
+top: 450px;
+right: 20px;
+width: 180px;
+height: 120px;
+} 
+  
+.alert {
+    position: absolute;
+    top: 450px;
+    left: 20px;
+    width: 300px;
+    height: 70px;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+  }
+  
+
+
+
+  body  {
+    background-image: url("images.jpg");
+ 
+  }

@@ -1,0 +1,27 @@
+input[type=text]{
+    font-size: medium;
+    text-align: center;
+    width: 100%;
+    padding: 12px 150px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+  }
+
+  button[type=submit] {
+    width: 50%;
+    background-color: #030303;
+    color: white;
+    padding: 14px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ 
+  
+  

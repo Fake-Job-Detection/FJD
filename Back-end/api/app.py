@@ -19,7 +19,9 @@ auth = firebase.auth()
 # Initialze person as dictionary
 person = {"is_logged_in": False, "email": "", "uid": ""}
 
-
+@app.route('/')
+def hello_world():
+    return 'Hello, Hairthentic!'
 # Login
 @app.route("/result")
 def login():

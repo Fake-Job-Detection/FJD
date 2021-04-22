@@ -2,7 +2,7 @@
 import pyrebase
 from flask import Flask, flash, redirect, render_template, request, session, abort, url_for, Blueprint
 
-CompanySigninSignUp = Blueprint('CompanySignSignUp', __name__, url_prefix='/api')
+CompanySigninSignUp = Flask('CompanySignSignUp', __name__)
 # localhost:5000/api/CompanySignSignUp/results
 
 config = {
