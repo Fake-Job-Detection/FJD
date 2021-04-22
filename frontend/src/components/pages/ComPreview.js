@@ -12,6 +12,13 @@ export default function ComPreview() {
     <br/>
       <br/>
       </tr> 
+      <div className="main">
+      <div className="signout">
+            <form action="http://localhost:3000/Company">
+				<input    type="submit" value="Logout"  /> 
+			</form>
+      </div>
+        </div>
       
       <p>Video about the the company to expose their workplace background for the
           jobseekers and Rates job posts with numbers 0 to 10 on the basis of the parameters.</p>
