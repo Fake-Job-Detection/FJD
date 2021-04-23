@@ -1,14 +1,9 @@
 import re
 import string
-import math
-import pandas as pd
-from nltk.cluster import cosine_distance
-from sklearn.model_selection import train_test_split
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-from nltk.stem import PorterStemmer
-from nltk.probability import FreqDist
-from nltk.corpus import wordnet
+from nltk.corpus import stopwords                       #filters stop words from the text to be processed
+from nltk.tokenize import word_tokenize                 #returns syllables from a single word
+from nltk.stem import PorterStemmer                     #link all words to rooot word
+from nltk.corpus import wordnet                         #set of cognitive synonyms called a "synsets"
 import category_encoders as ce
 import pickle
 from Exceptionhandling import handle
