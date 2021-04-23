@@ -44,21 +44,21 @@ export default function Company() {
 	  };*/
 	const [registrationFormStatus, setRegistartionFormStatus] = useState(false);
 	const loginProps = useSpring({
-		left: registrationFormStatus ? -500 : 0, // Login form sliding positions
+		left: registrationFormStatus ? -500 : 0, 
 	});
 	const registerProps = useSpring({
-		left: registrationFormStatus ? 0 : 500, // Register form sliding positions
+		left: registrationFormStatus ? 0 : 500, 
 	});
 
 	const loginBtnProps = useSpring({
 		borderBottom: registrationFormStatus
 			? "solid 0px transparent"
-			: "solid 2px #1059FF",  //Animate bottom border of login button
+			: "solid 2px #1059FF",
 	});
 	const registerBtnProps = useSpring({
 		borderBottom: registrationFormStatus
 			? "solid 2px #1059FF"
-			: "solid 0px transparent", //Animate bottom border of register button
+			: "solid 0px transparent", 
 	});
 
 	function registerClicked() {

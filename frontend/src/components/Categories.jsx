@@ -4,7 +4,7 @@ import CardItem from './CardItem';
 
 function Categories() {
   return (
-    <div className='cards'>
+    <div className='category'>
       <h1>POPULAR CATEGORIES</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
