@@ -1,7 +1,6 @@
 import pickle
-import pandas as pd
 from sklearn.preprocessing import StandardScaler
-from .DataScience.Exceptionhandling import handle
+from FJD.DataScience.Exceptionhandling import handle
 
 
 def train_and_save_model(data):
