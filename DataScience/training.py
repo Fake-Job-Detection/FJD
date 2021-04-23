@@ -14,4 +14,4 @@ def training():
              .pipe(categorical_cols_train).pipe(train_and_save_model))
 
     except Exception as e:
-        handle("Training piepline")
+        handle("Training pipeline")
